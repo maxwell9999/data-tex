@@ -1,0 +1,42 @@
+/** ensure HTML5 support in browsers */
+header, section, nav {
+   display: block;
+}
+
+.masthead,
+.navi-row,
+.featured-content {
+   margin-bottom: 2em;
+}
+
+ .nclab-row,
+ .navi-buttons,
+ .creation-buttons {
+   margin-bottom: 0.5em;
+ }
+
+/** body spacing from top of page */
+.body,
+.nclab-row {
+   margin-top: 2em;
+}
+
+.featured-banner {
+   color: #fff;
+   background: #337ab7;
+   margin-bottom: 2em;
+   border-radius: 2%;
+}
+
+.tile-text {
+   font-size: 2em;
+}
+
+.tile-subtext {
+   font-size: 1em;
+}
+
+.my-face {
+   max-width: 15em;
+   max-height: 15em;
+}
