@@ -6,6 +6,7 @@ header, section, nav {
 .masthead,
 .navi-row,
 .featured-content {
+   background-color: #02c8a7;
    margin-bottom: 2em;
 }
 
@@ -39,4 +40,8 @@ header, section, nav {
 .my-face {
    max-width: 15em;
    max-height: 15em;
+}
+
+#surveyTemplates {
+   background-color: #02c8a7;
 }
