@@ -3,8 +3,7 @@ header, section, nav {
    display: block;
 }
 
-.masthead,
-.featured-content {
+.masthead {
    background-color: #02c8a7;
    margin-bottom: 2em;
 }
