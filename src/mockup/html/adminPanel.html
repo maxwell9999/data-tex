@@ -11,7 +11,7 @@
          integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
          crossorigin="anonymous">
    <link rel="stylesheet" href="../css/style.css">
-   <title>Executive Designer and Analyst HomePage</title>
+   <title>Admin Home Page</title>
 </head>
 
 <body class="body">
@@ -31,7 +31,6 @@
          </div>
          
       </section>
-      
 
       <section class="row navi-row">
          <nav class="col-sm-12 navi-buttons">
@@ -39,60 +38,42 @@
                <li class="active">
                   <a data-toggle="tab" href="#home">Home</a>
                </li>
-               <li>
-                  <a data-toggle="tab" href="#surveyTemplates">Survey Templates</a>
-               </li>
             </ul>
          </nav>
+         
       </section>
 
-      <div class="tab-content">
+      <div class="tab-content" style="border: 1px solid lightgrey;">
 
          <section id="home" class="tab-pane active row">
             <div class="col-sm-12">
          <section>
 
-         <section id="home_tools">
-            <div class="col-sm-4" style=" border-left: 1px solid lightgrey; border-top: 1px solid lightgrey; border-bottom: 1px solid lightgrey">
-               <input id="survey_searchbar" style="height: 30" type="text" name="search_survey" value="" placeholder="Enter a field to search for"></br>
-            </div>
-            <div class="col-sm-8 text-right creation-buttons" style="border-right: 1px solid lightgrey; border-top: 1px solid lightgrey; border-bottom: 1px solid lightgrey">
-               <a class="btn btn-success" href="html/surveyCreator.html">New Survey</a>
-            </div>
-         </section>
-
-      </section>
+         <div class="col-sm-4">
+            <input id="survey_searchbar" type="text" name="search_survey" value="" placeholder="Enter a field to search for"></br>
+         </div>
+         <div class="col-sm-8 text-right creation-buttons">
+            <a class="btn btn-success" href="html/surveyCreator.html">New User</a>
+         </div>
                <table class="table table-striped" style="border: 1px solid lightgrey;">
                   <thead>
                      <tr>
-                        <th>Survey Name</th>
-                        <th>Survey ID</th>
-                        <th>Survey Status</th>
-                        <th>Date Created</th>
-                        <th>Last Modified</th>
-                        <th>Creator</th>
-                        <th>Analyze</th>
-                        <th>Publish</th>
+                        <th>User Name</th>
+                        <th>User ID</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Role</th>
                         <th>Edit</th>
                         <th>Delete</th>
                      </tr>
                   </thead>
                   <tbody>
-                     <tr>
-                        <th scope="row">Cheeses</th>
-                        <td>123456</td>
-                        <td>In Review</td>
-                        <td>11/2/2016</td>
-                        <td>11/3/2016</td>
-                        <td>@johndoe</td>
-                        <td>
-                           <img class="img-responsive img-rounded center-block" width="25" height="25" src="../img/analyze.png"
-                  alt="placeholder"/>
-                        </td>
-                        <td>
-                           <img class="img-responsive img-rounded center-block" width="25" height="25" src="../img/publish.png"
-                  alt="placeholder"/>
-                        </td>
+                    <tr>
+                        <th scope="row">joDoe@mrco.com</th>
+                        <td>546217</td>
+                        <td>John</td>
+                        <td>Doe</td>
+                        <td>Survey Designer</td>
                         <td>
                            <img class="img-responsive img-rounded center-block" width="25" height="25" src="../img/edit.png"
                   alt="placeholder"/>
@@ -102,20 +83,11 @@
                         </td>
                      </tr>
                      <tr>
-                        <th scope="row">Movies</th>
-                        <td>123458</td>
-                        <td>Reviewed Needs Modifications</td>
-                        <td>11/2/2016</td>
-                        <td>11/3/2016</td>
-                        <td>@johndoe</td>
-                        <td>
-                           <img class="img-responsive img-rounded center-block" width="25" height="25" src="../img/analyze.png"
-                  alt="placeholder"/>
-                        </td>
-                        <td>
-                           <img class="img-responsive img-rounded center-block" width="25" height="25" src="../img/publish.png"
-                  alt="placeholder"/>
-                        </td>
+                        <th scope="row">jsmith@mrco.com</th>
+                        <td>546497</td>
+                        <td>Jill</td>
+                        <td>Smith</td>
+                        <td>Survey Analyst</td>
                         <td>
                            <img class="img-responsive img-rounded center-block" width="25" height="25" src="../img/edit.png"
                   alt="placeholder"/>
@@ -125,20 +97,11 @@
                         </td>
                      </tr>
                      <tr>
-                        <th scope="row">Books</th>
-                        <td>123456</td>
-                        <td>Ready to Deploy</td>
-                        <td>11/2/2016</td>
-                        <td>11/3/2016</td>
-                        <td>@johndoe</td>
-                        <td>
-                           <img class="img-responsive img-rounded center-block" width="25" height="25" src="../img/analyze.png"
-                  alt="placeholder"/>
-                        </td>
-                        <td>
-                           <img class="img-responsive img-rounded center-block" width="25" height="25" src="../img/publish.png"
-                  alt="placeholder"/>
-                        </td>
+                        <th scope="row">asmith@mrco.com</th>
+                        <td>546789</td>
+                        <td>Adam</td>
+                        <td>Smith</td>
+                        <td>Executive</td>
                         <td>
                            <img class="img-responsive img-rounded center-block" width="25" height="25" src="../img/edit.png"
                   alt="placeholder"/>
@@ -148,20 +111,11 @@
                         </td>
                      </tr>
                      <tr>
-                        <th scope="row">Cars</th>
-                        <td>123458</td>
-                        <td>Depolyed, Quota Not Met</td>
-                        <td>11/2/2016</td>
-                        <td>11/3/2016</td>
-                        <td>@johndoe</td>
-                        <td>
-                           <img class="img-responsive img-rounded center-block" width="25" height="25" src="../img/analyze.png"
-                  alt="placeholder"/>
-                        </td>
-                        <td>
-                           <img class="img-responsive img-rounded center-block" width="25" height="25" src="../img/publish.png"
-                  alt="placeholder"/>
-                        </td>
+                        <th scope="row">jdurd@mrco.com</th>
+                        <td>546217</td>
+                        <td>Jack</td>
+                        <td>Durden</td>
+                        <td>Admin</td>
                         <td>
                            <img class="img-responsive img-rounded center-block" width="25" height="25" src="../img/edit.png"
                   alt="placeholder"/>
@@ -171,43 +125,11 @@
                         </td>
                      </tr>
                      <tr>
-                        <th scope="row">Fast Food</th>
-                        <td>123456</td>
-                        <td>Ready for Analysis</td>
-                        <td>11/2/2016</td>
-                        <td>11/3/2016</td>
-                        <td>@johndoe</td>
-                        <td>
-                           <img class="img-responsive img-rounded center-block" width="25" height="25" src="../img/analyze.png"
-                  alt="placeholder"/>
-                        </td>
-                        <td>
-                           <img class="img-responsive img-rounded center-block" width="25" height="25" src="../img/publish.png"
-                  alt="placeholder"/>
-                        </td>
-                        <td>
-                           <img class="img-responsive img-rounded center-block" width="25" height="25" src="../img/edit.png"
-                  alt="placeholder"/>
-                        </td>
-                        <td>
-                           <img class="img-responsive img-rounded center-block" width="25" height="25" src="../img/delete.png" />
-                        </td>
-                     </tr>
-                     <tr>
-                        <th scope="row">Sports</th>
-                        <td>123466</td>
-                        <td>Draft</td>
-                        <td>11/5/2016</td>
-                        <td>11/7/2016</td>
-                        <td>@johndoe</td>
-                        <td>
-                           <img class="img-responsive img-rounded center-block" width="25" height="25" src="../img/analyze.png"
-                  alt="placeholder"/>
-                        </td>
-                        <td>
-                           <img class="img-responsive img-rounded center-block" width="25" height="25" src="../img/publish.png"
-                  alt="placeholder"/>
-                        </td>
+                        <th scope="row">kPark@mrco.com</th>
+                        <td>546482</td>
+                        <td>Kenneth</td>
+                        <td>Park</td>
+                        <td>Survey Designer</td>
                         <td>
                            <img class="img-responsive img-rounded center-block" width="25" height="25" src="../img/edit.png"
                   alt="placeholder"/>
