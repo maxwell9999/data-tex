@@ -33,171 +33,123 @@
       </section>
 
       <section class="row navi-row">
-         <nav class="col-sm-12 navi-buttons">
+         <nav class="col-sm-6 navi-buttons">
             <ul class="nav nav-tabs nav-justified" data-tabs="tabs">
                <li class="active">
                   <a data-toggle="tab" href="#home">Home</a>
                </li>
             </ul>
          </nav>
+         <div class="col-sm-6">
+         </div>
          
       </section>
 
-      <div class="tab-content" style="border: 1px solid lightgrey;">
+      <div class="tab-content">
 
          <section id="home" class="tab-pane active row">
             <div class="col-sm-12">
-         <section>
+         
 
-         <div class="col-sm-4">
-            <input id="survey_searchbar" type="text" name="search_survey" value="" placeholder="Enter a field to search for"></br>
-         </div>
-         <div class="col-sm-8 text-right creation-buttons">
-            <a class="btn btn-success" href="html/surveyCreator.html">New User</a>
-         </div>
-               <table class="table table-striped" style="border: 1px solid lightgrey;">
-                  <thead>
-                     <tr>
-                        <th>User Name</th>
-                        <th>User ID</th>
-                        <th>First Name</th>
-                        <th>Last Name</th>
-                        <th>Role</th>
-                        <th>Edit</th>
-                        <th>Delete</th>
-                     </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                        <th scope="row">joDoe@mrco.com</th>
-                        <td>546217</td>
-                        <td>John</td>
-                        <td>Doe</td>
-                        <td>Survey Designer</td>
-                        <td>
-                           <img class="img-responsive img-rounded center-block" width="25" height="25" src="../img/edit.png"
-                  alt="placeholder"/>
-                        </td>
-                        <td>
-                           <img class="img-responsive img-rounded center-block" width="25" height="25" src="../img/delete.png" />
-                        </td>
-                     </tr>
-                     <tr>
-                        <th scope="row">jsmith@mrco.com</th>
-                        <td>546497</td>
-                        <td>Jill</td>
-                        <td>Smith</td>
-                        <td>Survey Analyst</td>
-                        <td>
-                           <img class="img-responsive img-rounded center-block" width="25" height="25" src="../img/edit.png"
-                  alt="placeholder"/>
-                        </td>
-                        <td>
-                           <img class="img-responsive img-rounded center-block" width="25" height="25" src="../img/delete.png" />
-                        </td>
-                     </tr>
-                     <tr>
-                        <th scope="row">asmith@mrco.com</th>
-                        <td>546789</td>
-                        <td>Adam</td>
-                        <td>Smith</td>
-                        <td>Executive</td>
-                        <td>
-                           <img class="img-responsive img-rounded center-block" width="25" height="25" src="../img/edit.png"
-                  alt="placeholder"/>
-                        </td>
-                        <td>
-                           <img class="img-responsive img-rounded center-block" width="25" height="25" src="../img/delete.png" />
-                        </td>
-                     </tr>
-                     <tr>
-                        <th scope="row">jdurd@mrco.com</th>
-                        <td>546217</td>
-                        <td>Jack</td>
-                        <td>Durden</td>
-                        <td>Admin</td>
-                        <td>
-                           <img class="img-responsive img-rounded center-block" width="25" height="25" src="../img/edit.png"
-                  alt="placeholder"/>
-                        </td>
-                        <td>
-                           <img class="img-responsive img-rounded center-block" width="25" height="25" src="../img/delete.png" />
-                        </td>
-                     </tr>
-                     <tr>
-                        <th scope="row">kPark@mrco.com</th>
-                        <td>546482</td>
-                        <td>Kenneth</td>
-                        <td>Park</td>
-                        <td>Survey Designer</td>
-                        <td>
-                           <img class="img-responsive img-rounded center-block" width="25" height="25" src="../img/edit.png"
-                  alt="placeholder"/>
-                        </td>
-                        <td>
-                           <img class="img-responsive img-rounded center-block" width="25" height="25" src="../img/delete.png" />
-                        </td>
-                     </tr>
-                 </tbody>
-               </table>
-            </div>
-         </section>
+	         <section id="home_tools">
+	            <div class="col-sm-4" style=" border-left: 1px solid lightgrey; border-top: 1px solid lightgrey; border-bottom: 1px solid lightgrey">
+	               <input class="searchbar" id="survey_searchbar" type="search" name="search_survey" value="" placeholder="Enter a field to search for"></br>
+	            </div>
 
-         <section id="surveyTemplates" class="tab-pane row" style="border: 1px solid lightgrey">
-            <div class="col-lg-4 col-sm-6 col-xs-12">
-               <div class="row featured-content">
-                   <div class="col-lg-7 col-md-6 col-sm-7 col-xs-6">
-                     <a href="">
-                     <img class="img-responsive img-rounded center-block" width="200" height="200" src="../img/template.png"
-                        alt="Resume">
-                     </a>
-                  </div>
-                  <div class="col-lg-5 col-md-6 col-sm-5 col-xs-6">
-                     <a href=""><p class="tile-text text-left">Template 1</p></a>
-                     <p class="tile-subtext text-left">Demographics</p>
-                     <p class="text-left">
-                       <a class="tile-subtext" href="">Made by MT</a>
-                     </p>
-                  </div>
-               </div>
-            </div>
-            <div class="col-lg-4 col-sm-6 col-xs-12">
-               <div class="row featured-content">
-                  <div class="col-lg-7 col-md-6 col-sm-7 col-xs-6">
-                     <a href="http://github.com">
-                        <img class="img-responsive img-rounded center-block" width="200" height="200" src="../img/template.png"
-                           alt="Frogger">
-                     </a>
-                  </div>
-                  <div class="col-lg-5 col-md-6 col-sm-5 col-xs-6">
-                     <p class="tile-text text-left">Template 2</p>
-                     <p class="tile-subtext text-left">Conjoint trade-off</p>
-                     <p class="text-left">
-                        <a class="tile-subtext" href="http://isitchristmas.com">Made by MD</a>
-                     </p>
-                  </div>
-               </div>
-            </div>
-            <div class="col-lg-4 col-sm-6 col-xs-12">
-               <div class="row featured-content">
-                  <div class="col-lg-7 col-md-6 col-sm-7 col-xs-6">
-                     <a href="http://sometimesredsometimesblue.com">
-                        <img class="img-responsive img-rounded center-block" width="200" height="200" src="../img/template.png"
-                           alt="sometimesredsometimesblue">
-                     </a>
-                  </div>
-                  <div class="col-lg-5 col-md-6 col-sm-5 col-xs-6">
-                     <p class="tile-text text-left">Template 3</p>
-                     <p class="tile-subtext text-left">A true experience of color</p>
-                     <p class="text-left">
-                        <a class="tile-subtext" href="http://sometimesredsometimesblue.com">The Greatest Website on the Internet</a>
-                     </p>
-                  </div>
-               </div>
-            </div>
-         </section>
+	            <div class="col-sm-8 text-right creation-buttons" style="border-right: 1px solid lightgrey; border-top: 1px solid lightgrey; border-bottom: 1px solid lightgrey">
+	               <a class="btn btn-success" href="html/surveyCreator.html">New Survey</a>
+	            </div>
+	         </section>
 
-      </div>
+
+	            <div>
+	               <table class="table table-striped" style="border: 1px solid lightgrey;">
+	                  <thead>
+	                     <tr>
+	                        <th>User Name</th>
+	                        <th>User ID</th>
+	                        <th>First Name</th>
+	                        <th>Last Name</th>
+	                        <th>Role</th>
+	                        <th>Edit</th>
+	                        <th>Delete</th>
+	                     </tr>
+	                  </thead>
+	                  <tbody>
+	                    <tr>
+	                        <th scope="row">joDoe@mrco.com</th>
+	                        <td>546217</td>
+	                        <td>John</td>
+	                        <td>Doe</td>
+	                        <td>Survey Designer</td>
+	                        <td>
+	                           <img class="img-responsive img-rounded center-block" width="25" height="25" src="../img/edit.png"
+	                  alt="placeholder"/>
+	                        </td>
+	                        <td>
+	                           <img class="img-responsive img-rounded center-block" width="25" height="25" src="../img/delete.png" />
+	                        </td>
+	                     </tr>
+	                     <tr>
+	                        <th scope="row">jsmith@mrco.com</th>
+	                        <td>546497</td>
+	                        <td>Jill</td>
+	                        <td>Smith</td>
+	                        <td>Survey Analyst</td>
+	                        <td>
+	                           <img class="img-responsive img-rounded center-block" width="25" height="25" src="../img/edit.png"
+	                  alt="placeholder"/>
+	                        </td>
+	                        <td>
+	                           <img class="img-responsive img-rounded center-block" width="25" height="25" src="../img/delete.png" />
+	                        </td>
+	                     </tr>
+	                     <tr>
+	                        <th scope="row">asmith@mrco.com</th>
+	                        <td>546789</td>
+	                        <td>Adam</td>
+	                        <td>Smith</td>
+	                        <td>Executive</td>
+	                        <td>
+	                           <img class="img-responsive img-rounded center-block" width="25" height="25" src="../img/edit.png"
+	                  alt="placeholder"/>
+	                        </td>
+	                        <td>
+	                           <img class="img-responsive img-rounded center-block" width="25" height="25" src="../img/delete.png" />
+	                        </td>
+	                     </tr>
+	                     <tr>
+	                        <th scope="row">jdurd@mrco.com</th>
+	                        <td>546217</td>
+	                        <td>Jack</td>
+	                        <td>Durden</td>
+	                        <td>Admin</td>
+	                        <td>
+	                           <img class="img-responsive img-rounded center-block" width="25" height="25" src="../img/edit.png"
+	                  alt="placeholder"/>
+	                        </td>
+	                        <td>
+	                           <img class="img-responsive img-rounded center-block" width="25" height="25" src="../img/delete.png" />
+	                        </td>
+	                     </tr>
+	                     <tr>
+	                        <th scope="row">kPark@mrco.com</th>
+	                        <td>546482</td>
+	                        <td>Kenneth</td>
+	                        <td>Park</td>
+	                        <td>Survey Designer</td>
+	                        <td>
+	                           <img class="img-responsive img-rounded center-block" width="25" height="25" src="../img/edit.png"
+	                  alt="placeholder"/>
+	                        </td>
+	                        <td>
+	                           <img class="img-responsive img-rounded center-block" width="25" height="25" src="../img/delete.png" />
+	                        </td>
+	                     </tr>
+	                 </tbody>
+	               </table>
+	            </div>
+	        </div>
 
    <!-- placed at end so webpage loads visibly before executing js -->
    <script src="https://code.jquery.com/jquery-1.11.3.min.js">

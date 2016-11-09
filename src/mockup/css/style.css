@@ -25,6 +25,9 @@ header, section, nav {
    border-radius: 2%;
 }
 
+.searchbar {
+   padding: .37em;
+}
 .tile-text {
    font-size: 2em;
 }

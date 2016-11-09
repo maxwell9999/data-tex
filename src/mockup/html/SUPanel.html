@@ -34,7 +34,7 @@
       
 
       <section class="row navi-row">
-         <nav class="col-sm-12 navi-buttons">
+         <nav class="col-sm-6 navi-buttons">
             <ul class="nav nav-tabs nav-justified" data-tabs="tabs">
                <li class="active">
                   <a data-toggle="tab" href="#home">Home</a>
@@ -44,24 +44,25 @@
                </li>
             </ul>
          </nav>
+         <div class="col-sm-6">
+         </div>
       </section>
 
       <div class="tab-content">
 
          <section id="home" class="tab-pane active row">
             <div class="col-sm-12">
-         <section>
 
-         <section id="home_tools">
-            <div class="col-sm-4" style=" border-left: 1px solid lightgrey; border-top: 1px solid lightgrey; border-bottom: 1px solid lightgrey">
-               <input id="survey_searchbar" style="height: 30" type="text" name="search_survey" value="" placeholder="Enter a field to search for"></br>
-            </div>
-            <div class="col-sm-8 text-right creation-buttons" style="border-right: 1px solid lightgrey; border-top: 1px solid lightgrey; border-bottom: 1px solid lightgrey">
-               <a class="btn btn-success" href="html/surveyCreator.html">New Survey</a>
-            </div>
-         </section>
+               <section id="home_tools">
+                  <div class="col-sm-4" style=" border-left: 1px solid lightgrey; border-top: 1px solid lightgrey; border-bottom: 1px solid lightgrey">
+                     <input class="searchbar" id="survey_searchbar" style="height: 30" type="search" name="search_survey" value="" placeholder="Enter a field to search for"></br>
+                  </div>
 
-      </section>
+                  <div class="col-sm-8 text-right creation-buttons" 
+                     style="border-right: 1px solid lightgrey; border-top: 1px solid lightgrey; border-bottom: 1px solid lightgrey">
+                     <a class="btn btn-success" href="html/surveyCreator.html">New Survey</a>
+                  </div>
+               </section>
                <table class="table table-striped" style="border: 1px solid lightgrey;">
                   <thead>
                      <tr>
@@ -218,7 +219,6 @@
                      </tr>
                  </tbody>
                </table>
-            </div>
          </section>
 
          <section id="surveyTemplates" class="tab-pane row" style="border: 1px solid lightgrey">
