@@ -5,18 +5,181 @@
 <head>
    <meta charset= "utf-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name= "viewport" content= "width=device-width, initial-scale = 1">
-   <link rel= "stylesheet" href="css/style.css">
-   <link rel="stylesheet" href="css/bootstrap.min.css">
-   <link rel= "stylesheet" href="css/normalize.css">
-   <script src="js/bootstrap.min.js"></script>
-   <title>Survey Creator</title>
+   <meta name="viewport" content= "width=device-width, initial-scale = 1">
+   <link rel="stylesheet"
+         href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+         integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+         crossorigin="anonymous">
+   <link rel="stylesheet" href="../css/style.css">
+   <title>Survey Creation</title>
 </head>
 
 <body>
+	<div class="container">
 
-<div><p>placeholder for survey templates</p><div>
+	    <section class="row masthead">
+	      	<div class="col-sm-6">
+	            <div class="col-sm-4">
+	               <img class="img-rounded center-block" height="120" width="180" src="../img/Logo.png" alt="placeholder"/>
+	            </div>
+		      	<div class="col-sm-8">
+		            <h2 class="header-name text-center">XYZ Market Research</h2>
+		            <h4 class="sub-header-title text-center">Survey Tool</h4>
+		        </div>
+			</div>
+	       	<div class="col-sm-6">
+		    	<div class="col-sm-6 text-right">
+		        </div>
+		        <div class="col-sm-5 text-right">
+		        	john_doe@mrco.com
+		        </div>
+		        <div class="col-sm-1">
+		        	<img height="25" width="25" src="../img/settings.png" alt="placeholder"/>
+		        </div>
+		   	</div>
+	    </section>
+	    <section class="editor">
+	    	<div class="col-sm-4">
+ 				<div class="panel-group" id="accordion">
+				  <div class="panel panel-default">
+				    <div class="panel-heading">
+				      <h4 class="panel-title">
+				        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Question Types</a>
+				      </h4>
+				    </div>
+				    <div id="collapse1" class="panel-collapse collapse in">
+				      <div class="panel-body">
+					      <h4 class="question_type">
+					      Multiple Choice
+					      </h4>
+					      <h4 class="question_type">
+					      Multiple Option
+					      </h4>
+					      <h4 class="question_type">
+					      Free Response
+					      </h4>
+					      <h4 class="question_type">
+					      Ranking
+					      </h4>
+					      <h4 class="question_type">
+					      Rating
+					      </h4>
+					      <h4 class="question_type">
+					      Conjoint Trade-off: Full Profile
+					      </h4>
+					      <h4 class="question_type">
+					      Conjoint Trade-off: Two Option
+					      </h4>					      
+				      </div>
+				    </div>
+				  </div>
+				  <div class="panel panel-default">
+				    <div class="panel-heading">
+				      <h4 class="panel-title">
+				        <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Saved Questions</a>
+				      </h4>
+				    </div>
+				    <div id="collapse2" class="panel-collapse collapse">
+				      <div class="panel-body"> 
+				      	<h4 class="question_type">
+					      What is your race?
+					    </h4>
+					      <h4 class="question_type">
+					      What is your gender?
+					    </h4>
+					    <h4 class="question_type">
+					      How many people live in your household?
+					    </h4>
+					    <h4 class="question_type">
+					      What is your yearly income?
+					    </h4>
+					    </div>
+				    </div>
+				  </div>
+				</div>
+	    	</div>
 
+	    	<div class="col-sm-8">
+ 				<section class="question row navi-row" id="question_1">
+ 					<nav class="col-sm-16 navi-buttons">
+		 				<ul class="nav nav-tabs nav-justified" data-tabs="tabs">
+			               <li class="active">
+			                  <a data-toggle="tab" href="#question1">Question</a>
+			               </li>
+			               <li>
+			                  <a data-toggle="tab" href="#logic1">Flow Logic</a>
+			               </li>
+		            	</ul>
+	            	</nav>
+	            </section>
+
+            	<div class="tab-conent">
+            		<section id="question1" class="tab-pane active row">
+            			<div class="col-sm-12 question_content">
+            				<div>
+		            			<h3>
+		            				1. What is your favorite color?
+		            			</h3>
+		            			<p>
+		            				A. Red
+		            			</p>
+		            			<p>
+		            				B. Blue
+		            			</p>
+		            			<p>
+		            				C. Orange
+		            			</p>
+		            			<p>
+		            				D. Purple
+		            			</p>
+	            			</div>
+            			</div>
+            		</section>
+
+            		<section id="logic1" class="tab-pane row">
+            			<div class="row col-sm-12 question-content">
+		            		<div class="col-sm-4">
+			            		<p>
+			            			If A. answered then go to 
+			            		</p>
+		            		</div>
+		            		<div class="col-sm-8">
+		            			<input type="textbox"/>
+		            		</div>
+		            		<div class="col-sm-4">
+		            			<p>
+		            				If B. answered then go to 
+		            			</p>
+		            		</div>
+		            		<div class="col-sm-8">
+		            			<input type="textbox"/>
+		            		</div>
+		            		<div class="col-sm-4">
+		            			<p>
+		            				If C. answered then go to 
+		            			</p>
+		            		</div>
+		            		<div class="col-sm-8">
+		            			<input type="textbox"/>
+		            		</div>
+		            		<div class="col-sm-4">
+		            			<p>
+		            				If D. answered then go to 
+		            			</p>
+		            		</div>
+		            		<div class="col-sm-8">
+		            			<input type="textbox"/>
+		            		</div>
+            		</section>
+				</div>
+
+	    	</div>
+	    </section>
+	</div>
+	<script src="https://code.jquery.com/jquery-1.11.3.min.js">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js">
+    </script>
 </body>
 
 </html>

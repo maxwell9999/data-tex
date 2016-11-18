@@ -10,198 +10,50 @@
          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
          integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
          crossorigin="anonymous">
-   <link rel="stylesheet" href="css/style.css">
-   <title>Survey Tool</title>
+   <link rel="stylesheet" href="./css/style.css">
+   <link rel="stylesheet" type="text/javascript" href="js/login.js">
+   <title>Survey Tool - Login</title>
 </head>
 
 <body class="body">
 
-   <div class="container">
-
-      <section class="row masthead">
-         <div class="col-sm-6">
-            <div class="col-sm-4">
-               <img class="img-responsive img-rounded center-block" src="http://placehold.it/200x100"
-                  alt="placeholder">
+<section class="container text-center">
+        <div class="login">
+                <header>
+                  <h3 class="header-name text-center">XYZ Market Research</h2>
+                  <h4 class="sub-header-title text-center">Survey Tool</h4>
+                </header>
+                   <img class="img-rounded center-block" height="180" width="270" src="./img/Logo.png"
+                      alt="placeholder">
+            <div>
+              <p> </p>
             </div>
-            <header class="col-sm-8">
-            <h2 class="header-name text-center">XYZ Market Research</h2>
-            <h4 class="sub-header-title text-center">Survey Tool</h4>
-         </header>
-         </div>
-         
-      </section>
+            <!--Login form-->
+            <form id="login_form" name="login_form" method="post" action="./html/SUPanel.html">
 
-      <section class="row navi-row">
-         <nav class="col-sm-7 navi-buttons">
-            <ul class="nav nav-tabs nav-justified" data-tabs="tabs">
-               <li class="active">
-                  <a data-toggle="tab" href="#home">Home</a>
-               </li>
-               <li>
-                  <a data-toggle="tab" href="#surveyTemplates">Survey Templates</a>
-               </li>
-            </ul>
-         </nav>
-         <div class="col-sm-5 text-right creation-buttons">
-            <a class="btn btn-success" href="html/surveyCreator.html">New Survey</a>
-         </div>
-      </section>
+                <p hidden class="well" id="login_validation_errors"></p>
 
-      <div class="tab-content">
+                <input id="login_user" type="text" name="login_user" value="" placeholder="Username or Email"></br>
 
-         <section id="home" class="tab-pane active row">
-            <div class="col-sm-12">
-               <table class="table table-striped" style="border: 1px solid lightgrey;">
-                  <thead>
-                     <tr>
-                        <th>Survey Name</th>
-                        <th>Survey ID</th>
-                        <th>Survey Status</th>
-                        <th>Date Created</th>
-                        <th>Last Modified</th>
-                        <th>Creator</th>
-                        <th>Analyze</th>
-                        <th>Publish</th>
-                        <th>Edit</th>
-                        <th>Delete</th>
-                     </tr>
-                  </thead>
-                  <tbody>
-                     <tr>
-                        <th scope="row">Cheeses</th>
-                        <td>123456</td>
-                        <td>In Review</td>
-                        <td>11/2/2016</td>
-                        <td>11/3/2016</td>
-                        <td>@johndoe</td>
-                        <td>n/a</td>
-                        <td>n/a</td>
-                        <td>
-                           <img class="img-responsive img-rounded center-block" width="25" height="25" src="../img/edit.png"
-                  alt="placeholder"/>
-                        </td>
-                        <td>
-                           <img class="img-responsive img-rounded center-block" width="25" height="25" src="../img/delete.png" />
-                        </td>
-                     </tr>
-                     <tr>
-                        <th scope="row">Movies</th>
-                        <td>123458</td>
-                        <td>Reviewed Needs Modifications</td>
-                        <td>11/2/2016</td>
-                        <td>11/3/2016</td>
-                        <td>@johndoe</td>
-                        <td>n/a</td>
-                        <td>n/a</td>
-                        <td>
-                           <img class="img-responsive img-rounded center-block" width="25" height="25" src="../img/edit.png"
-                  alt="placeholder"/>
-                        </td>
-                        <td>
-                           <img class="img-responsive img-rounded center-block" width="25" height="25" src="../img/delete.png" />
-                        </td>
-                     </tr>
-                     <tr>
-                        <th scope="row">Books</th>
-                        <td>123456</td>
-                        <td>Ready to Deploy</td>
-                        <td>11/2/2016</td>
-                        <td>11/3/2016</td>
-                        <td>@johndoe</td>
-                        <td>n/a</td>
-                        <td>n/a</td>
-                        <td>
-                           <img class="img-responsive img-rounded center-block" width="25" height="25" src="../img/edit.png"
-                  alt="placeholder"/>
-                        </td>
-                        <td>
-                           <img class="img-responsive img-rounded center-block" width="25" height="25" src="../img/delete.png" />
-                        </td>
-                     </tr>
-                     <tr>
-                        <th scope="row">Sports</th>
-                        <td>123466</td>
-                        <td>Draft</td>
-                        <td>11/5/2016</td>
-                        <td>11/7/2016</td>
-                        <td>@johndoe</td>
-                        <td>n/a</td>
-                        <td>n/a</td>
-                        <td>
-                           <img class="img-responsive img-rounded center-block" width="25" height="25" src="../img/edit.png"
-                  alt="placeholder"/>
-                        </td>
-                        <td>
-                           <img class="img-responsive img-rounded center-block" width="25" height="25" src="../img/delete.png" />
-                        </td>
-                     </tr>
-                 </tbody>
-               </table>
-            </div>
-         </section>
+                <input id="login_password" type="password" name="login_password" value="" placeholder="Password"></br>
 
-         <section id="surveyTemplates" class="tab-pane row" style="border: 1px solid lightgrey">
-            <div class="col-lg-4 col-sm-6 col-xs-12">
-               <div class="row featured-content">
-                   <div class="col-lg-7 col-md-6 col-sm-7 col-xs-6">
-                     <a href="">
-                     <img class="img-responsive img-rounded center-block" width="200" height="200" src="../img/template.png"
-                        alt="Resume">
-                     </a>
-                  </div>
-                  <div class="col-lg-5 col-md-6 col-sm-5 col-xs-6">
-                     <a href=""><p class="tile-text text-left">Template 1</p></a>
-                     <p class="tile-subtext text-left">Demographics</p>
-                     <p class="text-left">
-                       <a class="tile-subtext" href="">Made by MT</a>
-                     </p>
-                  </div>
-               </div>
-            </div>
-            <div class="col-lg-4 col-sm-6 col-xs-12">
-               <div class="row featured-content">
-                  <div class="col-lg-7 col-md-6 col-sm-7 col-xs-6">
-                     <a href="http://github.com">
-                        <img class="img-responsive img-rounded center-block" width="200" height="200" src="../img/template.png"
-                           alt="Frogger">
-                     </a>
-                  </div>
-                  <div class="col-lg-5 col-md-6 col-sm-5 col-xs-6">
-                     <p class="tile-text text-left">Template 2</p>
-                     <p class="tile-subtext text-left">Conjoint trade-off</p>
-                     <p class="text-left">
-                        <a class="tile-subtext" href="http://github.com">Made by MD</a>
-                     </p>
-                  </div>
-               </div>
-            </div>
-            <div class="col-lg-4 col-sm-6 col-xs-12">
-               <div class="row featured-content">
-                  <div class="col-lg-7 col-md-6 col-sm-7 col-xs-6">
-                     <a href="http://sometimesredsometimesblue.com">
-                        <img class="img-responsive img-rounded center-block" width="200" height="200" src="../img/template.png"
-                           alt="sometimesredsometimesblue">
-                     </a>
-                  </div>
-                  <div class="col-lg-5 col-md-6 col-sm-5 col-xs-6">
-                     <p class="tile-text text-left">Template 3</p>
-                     <p class="tile-subtext text-left">A true experience of color</p>
-                     <p class="text-left">
-                        <a class="tile-subtext" href="http://sometimesredsometimesblue.com">sometimesredsometimesblue.com</a>
-                     </p>
-                  </div>
-               </div>
-            </div>
-         </section>
+                <label>
+                    <input type="checkbox" name="login_remember_checkbox" id="login_remember_checkbox"> Remember me on this computer
+                </label></br>
 
-      </div>
+                <input id="login_submit" type="submit" name="login_submit" value="Login">
 
-   <!-- placed at end so webpage loads visibly before executing js -->
-   <script src="https://code.jquery.com/jquery-1.11.3.min.js">
-   </script>
-   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js">
-   </script>
+            </form>
+        </div>
+
+    </section>
+       <!-- placed at end so webpage loads visibly before executing js -->
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js">
+    </script>
+    <script src="js/loginValidator.js">
+    </script>
 </body>
 
 </html>

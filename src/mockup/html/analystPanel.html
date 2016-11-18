@@ -11,7 +11,7 @@
          integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
          crossorigin="anonymous">
    <link rel="stylesheet" href="../css/style.css">
-   <title>Executive Designer and Analyst HomePage</title>
+   <title>Analyst Home Page</title>
 </head>
 
 <body class="body">
@@ -21,7 +21,7 @@
       <section class="row masthead">
          <div class="col-sm-6">
             <div class="col-sm-4">
-               <img class="img-responsive img-rounded center-block" src="http://placehold.it/200x100"
+               <img class="img-rounded center-block" height="120" width="180" src="../img/Logo.png"
                   alt="placeholder">
             </div>
             <header class="col-sm-8">
@@ -29,7 +29,17 @@
             <h4 class="sub-header-title text-center">Survey Tool</h4>
          </header>
          </div>
-         
+         <div class="col-sm-6">
+            <div class="col-sm-6 text-right">
+            </div>
+            <div class="col-sm-5 text-right">
+               john_doe@mrco.com
+            </div>
+            <div class="col-sm-1">
+               <img height="25" width="25" src="../img/settings.png"
+                  alt="placeholder"/>
+            </div>
+         </div>
       </section>
       
 
@@ -39,12 +49,19 @@
                <li class="active">
                   <a data-toggle="tab" href="#home">Home</a>
                </li>
-               <li>
-                  <a data-toggle="tab" href="#surveyTemplates">Survey Templates</a>
-               </li>
             </ul>
          </nav>
          <div class="col-sm-6">
+         	<div class="col-sm-6">
+         	</div>
+            <div class="col-sm-4">
+               <input class="searchbar" id="survey_searchbar" type="search" name="search_survey" value="" placeholder="Enter a field to search for"></br>
+            </div>
+            <div class="col-sm-2">
+
+               <img class="img-responsive img-rounded center-block" width="25" height="25" src="../img/search.png"
+                  alt="placeholder"/></td>
+            </div>
          </div>
       </section>
 
@@ -53,16 +70,6 @@
          <section id="home" class="tab-pane active row">
             <div class="col-sm-12">
 
-               <section id="home_tools">
-                  <div class="col-sm-4" style=" border-left: 1px solid lightgrey; border-top: 1px solid lightgrey; border-bottom: 1px solid lightgrey">
-                     <input class="searchbar" id="survey_searchbar" style="height: 30" type="search" name="search_survey" value="" placeholder="Enter a field to search for"></br>
-                  </div>
-
-                  <div class="col-sm-8 text-right creation-buttons" 
-                     style="border-right: 1px solid lightgrey; border-top: 1px solid lightgrey; border-bottom: 1px solid lightgrey">
-                     <a class="btn btn-success" href="html/surveyCreator.html">New Survey</a>
-                  </div>
-               </section>
                <table class="table table-striped" style="border: 1px solid lightgrey;">
                   <thead>
                      <tr>
@@ -73,9 +80,6 @@
                         <th>Last Modified</th>
                         <th>Creator</th>
                         <th>Analyze</th>
-                        <th>Publish</th>
-                        <th>Edit</th>
-                        <th>Delete</th>
                      </tr>
                   </thead>
                   <tbody>
@@ -90,17 +94,6 @@
                            <img class="img-responsive img-rounded center-block" width="25" height="25" src="../img/analyze.png"
                   alt="placeholder"/>
                         </td>
-                        <td>
-                           <img class="img-responsive img-rounded center-block" width="25" height="25" src="../img/publish.png"
-                  alt="placeholder"/>
-                        </td>
-                        <td>
-                           <img class="img-responsive img-rounded center-block" width="25" height="25" src="../img/edit.png"
-                  alt="placeholder"/>
-                        </td>
-                        <td>
-                           <img class="img-responsive img-rounded center-block" width="25" height="25" src="../img/delete.png" />
-                        </td>
                      </tr>
                      <tr>
                         <th scope="row">Movies</th>
@@ -112,17 +105,6 @@
                         <td>
                            <img class="img-responsive img-rounded center-block" width="25" height="25" src="../img/analyze.png"
                   alt="placeholder"/>
-                        </td>
-                        <td>
-                           <img class="img-responsive img-rounded center-block" width="25" height="25" src="../img/publish.png"
-                  alt="placeholder"/>
-                        </td>
-                        <td>
-                           <img class="img-responsive img-rounded center-block" width="25" height="25" src="../img/edit.png"
-                  alt="placeholder"/>
-                        </td>
-                        <td>
-                           <img class="img-responsive img-rounded center-block" width="25" height="25" src="../img/delete.png" />
                         </td>
                      </tr>
                      <tr>
@@ -136,17 +118,6 @@
                            <img class="img-responsive img-rounded center-block" width="25" height="25" src="../img/analyze.png"
                   alt="placeholder"/>
                         </td>
-                        <td>
-                           <img class="img-responsive img-rounded center-block" width="25" height="25" src="../img/publish.png"
-                  alt="placeholder"/>
-                        </td>
-                        <td>
-                           <img class="img-responsive img-rounded center-block" width="25" height="25" src="../img/edit.png"
-                  alt="placeholder"/>
-                        </td>
-                        <td>
-                           <img class="img-responsive img-rounded center-block" width="25" height="25" src="../img/delete.png" />
-                        </td>
                      </tr>
                      <tr>
                         <th scope="row">Cars</th>
@@ -158,17 +129,6 @@
                         <td>
                            <img class="img-responsive img-rounded center-block" width="25" height="25" src="../img/analyze.png"
                   alt="placeholder"/>
-                        </td>
-                        <td>
-                           <img class="img-responsive img-rounded center-block" width="25" height="25" src="../img/publish.png"
-                  alt="placeholder"/>
-                        </td>
-                        <td>
-                           <img class="img-responsive img-rounded center-block" width="25" height="25" src="../img/edit.png"
-                  alt="placeholder"/>
-                        </td>
-                        <td>
-                           <img class="img-responsive img-rounded center-block" width="25" height="25" src="../img/delete.png" />
                         </td>
                      </tr>
                      <tr>
@@ -182,17 +142,6 @@
                            <img class="img-responsive img-rounded center-block" width="25" height="25" src="../img/analyze.png"
                   alt="placeholder"/>
                         </td>
-                        <td>
-                           <img class="img-responsive img-rounded center-block" width="25" height="25" src="../img/publish.png"
-                  alt="placeholder"/>
-                        </td>
-                        <td>
-                           <img class="img-responsive img-rounded center-block" width="25" height="25" src="../img/edit.png"
-                  alt="placeholder"/>
-                        </td>
-                        <td>
-                           <img class="img-responsive img-rounded center-block" width="25" height="25" src="../img/delete.png" />
-                        </td>
                      </tr>
                      <tr>
                         <th scope="row">Sports</th>
@@ -204,17 +153,6 @@
                         <td>
                            <img class="img-responsive img-rounded center-block" width="25" height="25" src="../img/analyze.png"
                   alt="placeholder"/>
-                        </td>
-                        <td>
-                           <img class="img-responsive img-rounded center-block" width="25" height="25" src="../img/publish.png"
-                  alt="placeholder"/>
-                        </td>
-                        <td>
-                           <img class="img-responsive img-rounded center-block" width="25" height="25" src="../img/edit.png"
-                  alt="placeholder"/>
-                        </td>
-                        <td>
-                           <img class="img-responsive img-rounded center-block" width="25" height="25" src="../img/delete.png" />
                         </td>
                      </tr>
                  </tbody>

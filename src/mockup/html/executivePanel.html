@@ -11,7 +11,7 @@
          integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
          crossorigin="anonymous">
    <link rel="stylesheet" href="../css/style.css">
-   <title>Executive Designer and Analyst HomePage</title>
+   <title>Executive Home Page</title>
 </head>
 
 <body class="body">
@@ -21,13 +21,24 @@
       <section class="row masthead">
          <div class="col-sm-6">
             <div class="col-sm-4">
-               <img class="img-responsive img-rounded center-block" src="http://placehold.it/200x100"
+               <img class="img-rounded center-block" height="120" width="180" src="../img/Logo.png"
                   alt="placeholder">
             </div>
             <header class="col-sm-8">
             <h2 class="header-name text-center">XYZ Market Research</h2>
             <h4 class="sub-header-title text-center">Survey Tool</h4>
          </header>
+         </div>
+         <div class="col-sm-6">
+            <div class="col-sm-6 text-right">
+            </div>
+            <div class="col-sm-5 text-right">
+               john_doe@mrco.com
+            </div>
+            <div class="col-sm-1">
+               <img height="25" width="25" src="../img/settings.png"
+                  alt="placeholder"/>
+            </div>
          </div>
          
       </section>
@@ -39,12 +50,21 @@
                <li class="active">
                   <a data-toggle="tab" href="#home">Home</a>
                </li>
-               <li>
-                  <a data-toggle="tab" href="#surveyTemplates">Survey Templates</a>
-               </li>
             </ul>
          </nav>
          <div class="col-sm-6">
+         <div class="col-sm-6 text-right creation-buttons">
+               
+            </div>
+            <div class="col-sm-4">
+               <input class="searchbar" id="survey_searchbar" type="search" name="search_survey" value="" placeholder="Enter a field to search for"></br>
+            </div>
+            <div class="col-sm-2">
+
+               <img class="img-responsive img-rounded center-block" width="25" height="25" src="../img/search.png"
+                  alt="placeholder"/>
+                        </td>
+            </div>
          </div>
       </section>
 
@@ -53,16 +73,6 @@
          <section id="home" class="tab-pane active row">
             <div class="col-sm-12">
 
-               <section id="home_tools">
-                  <div class="col-sm-4" style=" border-left: 1px solid lightgrey; border-top: 1px solid lightgrey; border-bottom: 1px solid lightgrey">
-                     <input class="searchbar" id="survey_searchbar" style="height: 30" type="search" name="search_survey" value="" placeholder="Enter a field to search for"></br>
-                  </div>
-
-                  <div class="col-sm-8 text-right creation-buttons" 
-                     style="border-right: 1px solid lightgrey; border-top: 1px solid lightgrey; border-bottom: 1px solid lightgrey">
-                     <a class="btn btn-success" href="html/surveyCreator.html">New Survey</a>
-                  </div>
-               </section>
                <table class="table table-striped" style="border: 1px solid lightgrey;">
                   <thead>
                      <tr>
@@ -220,61 +230,6 @@
                  </tbody>
                </table>
          </section>
-
-         <section id="surveyTemplates" class="tab-pane row" style="border: 1px solid lightgrey">
-            <div class="col-lg-4 col-sm-6 col-xs-12">
-               <div class="row featured-content">
-                   <div class="col-lg-7 col-md-6 col-sm-7 col-xs-6">
-                     <a href="">
-                     <img class="img-responsive img-rounded center-block" width="200" height="200" src="../img/template.png"
-                        alt="Resume">
-                     </a>
-                  </div>
-                  <div class="col-lg-5 col-md-6 col-sm-5 col-xs-6">
-                     <a href=""><p class="tile-text text-left">Template 1</p></a>
-                     <p class="tile-subtext text-left">Demographics</p>
-                     <p class="text-left">
-                       <a class="tile-subtext" href="">Made by MT</a>
-                     </p>
-                  </div>
-               </div>
-            </div>
-            <div class="col-lg-4 col-sm-6 col-xs-12">
-               <div class="row featured-content">
-                  <div class="col-lg-7 col-md-6 col-sm-7 col-xs-6">
-                     <a href="http://github.com">
-                        <img class="img-responsive img-rounded center-block" width="200" height="200" src="../img/template.png"
-                           alt="Frogger">
-                     </a>
-                  </div>
-                  <div class="col-lg-5 col-md-6 col-sm-5 col-xs-6">
-                     <p class="tile-text text-left">Template 2</p>
-                     <p class="tile-subtext text-left">Conjoint trade-off</p>
-                     <p class="text-left">
-                        <a class="tile-subtext" href="http://isitchristmas.com">Made by MD</a>
-                     </p>
-                  </div>
-               </div>
-            </div>
-            <div class="col-lg-4 col-sm-6 col-xs-12">
-               <div class="row featured-content">
-                  <div class="col-lg-7 col-md-6 col-sm-7 col-xs-6">
-                     <a href="http://sometimesredsometimesblue.com">
-                        <img class="img-responsive img-rounded center-block" width="200" height="200" src="../img/template.png"
-                           alt="sometimesredsometimesblue">
-                     </a>
-                  </div>
-                  <div class="col-lg-5 col-md-6 col-sm-5 col-xs-6">
-                     <p class="tile-text text-left">Template 3</p>
-                     <p class="tile-subtext text-left">A true experience of color</p>
-                     <p class="text-left">
-                        <a class="tile-subtext" href="http://sometimesredsometimesblue.com">The Greatest Website on the Internet</a>
-                     </p>
-                  </div>
-               </div>
-            </div>
-         </section>
-
       </div>
 
    <!-- placed at end so webpage loads visibly before executing js -->
