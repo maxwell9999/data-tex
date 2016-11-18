@@ -17,10 +17,26 @@ header, section, nav {
     display: inline-block;
     font-size: 16px;
 }
-.table,
-.question_content
+.answer
+{
+   padding: .1em;
+   margin-left: 2em;
+}
+.cto-question,
+.mc-question,
+.mc-logic
+{
+   margin: .05em;
+   padding: .05em;
+   padding-left: 2em;
+   border: 1px solid lightgrey;
+   margin-bottom: 1em;
+   padding-bottom: 2em;
+}
+.table
 {
    border: 1px solid lightgrey;
+   margin: -.5em;
 }
 .question_type {
    border: 1px solid lightgrey;
