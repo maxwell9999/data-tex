@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+   <meta charset= "utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content= "width=device-width, initial-scale = 1">
+   <link rel="stylesheet"
+         href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+         integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+         crossorigin="anonymous">
+   <link rel="stylesheet" href="../css/style.css">
+   <script type="text/javascript" src="js/editSurvey.js"></script>
+   <title>Analysis Tool</title>
+</head>
+
+<body>
+   <div class="container">
+
+      <section class="row masthead">
+         <div class="col-sm-6">
+            <div class="col-sm-4">
+               <img class="img-responsive img-rounded center-block" src="http://placehold.it/200x100"
+                  alt="placeholder">
+            </div>
+            <header class="col-sm-8">
+            <h2 class="header-name text-center">XYZ Market Research</h2>
+            <h4 class="sub-header-title text-center">Survey Tool</h4>
+         </header>
+         </div>
+      </section>
+
+      <section>
+         <h2>Cheeses</h2>
+      </section>
+
+         <section id="home" class="tab-pane active row">
+            <section class="col-sm-4">
+               <div class="panel-group" id="accordion">
+                  <div class="panel panel-default">
+                     <div class="panel-heading">
+                        <h4 class="panel-title">
+                           <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+                              Create Filter
+                           </a>
+                        </h4>
+                     </div>
+                     <div id="collapse1" class="panel-collapse collapse in">
+                           <div class="panel-body">
+                              <div class="panel panel-default row">
+                                 <div class="panel-body col-sm-9">Filter by demographics</div>
+                                 <img class="col-sm-3 plusSign" src="../img/add.png">
+                              </div>
+                              <div class="panel panel-default">
+                                 <div class="panel-body">Filter by answers</div>
+                              </div>
+                              <div class="panel panel-default">
+                                 <div class="panel-body">Filter by number of repsonses</div>
+                              </div>
+                              <div class="panel panel-default">
+                                 <div class="panel-body">Filter by date answered</div>
+                              </div>
+                              <div class="panel panel-default">
+                                 <div class="panel-body">Filter by selected questions/reponses</div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="panel panel-default">
+                      <div class="panel-heading">
+                           <h4 class="panel-title">
+                              <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+                                 Saved Filters
+                              </a>
+                           </h4>
+                        </div>
+                     <div id="collapse2" class="panel-collapse collapse">
+                           <div class="panel-body">
+                              <div class="panel panel-default">
+                                 <div class="panel-body">Ages 18-24</div>
+                              </div>
+                              <div class="panel panel-default">
+                                 <div class="panel-body">Answered "Gruyere" to question 1</div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="panel panel-default">
+                        <div class="panel-heading">
+                           <h4 class="panel-title">
+                              <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+                                 Export Options
+                              </a>
+                           </h4>
+                        </div>
+                     <div id="collapse3" class="panel-collapse collapse">
+                        <div class="panel-body">
+                              <div class="panel panel-default">
+                                 <div class="panel-body">Export as PDF</div>
+                              </div>
+                              <div class="panel panel-default">
+                                 <div class="panel-body">Export as CSV</div>
+                              </div>
+                              <div class="panel panel-default">
+                                 <div class="panel-body">Export selected graph as png</div>
+                              </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <div class="col-sm-8">
+               <div class="panel panel-default">
+                  <div class="panel-heading">
+                     <div class="row">
+                        <div class="col-sm-8">Question 1</div>
+                        <div class="col-sm-4" align="right"><input type="checkbox" name="selected" class="float-right">Select for analysis&nbsp;&nbsp;</div>
+                     </div>
+                  </div>
+                  <div class="panel-body">
+                     <h3>Which is the best cheese?</h3>
+                     <div class="row">
+                        <div class="col-sm-8">Type: Multiple Choice</div><div class="col-sm-4"><p class="float-right">Responses: 100</p></div>
+                     </div>
+                     <img src="../img/cheeseGraph.png" class="">
+                  </div>
+                  <div class="panel-footer">
+                     <table id="dataTable1" class="table table-striped">
+                        <thead>
+                           <tr>
+                              <th>Select for analysis</th>
+                              <th>Answer Choices</th>
+                              <th>Responses</th>
+                              <th>Percentage of Responses</th>
+                           </tr>
+                        </thead>
+                        <tbody id="tableBody">
+                           <tr>
+                              <td><input type="checkbox" name="selected"></td>
+                              <td>Gruyere</td>
+                              <td>60</td>
+                              <td>60%</td>
+                           </tr>
+                           <tr>
+                              <td><input type="checkbox" name="selected"></td>
+                              <td>Emmental</td>
+                              <td>10</td>
+                              <td>10%</td>
+                           </tr>
+                           <tr>
+                              <td><input type="checkbox" name="selected"></td>
+                              <td>Raclette</td>
+                              <td>40</td>
+                              <td>40%</td>
+                           </tr>
+                       </tbody>
+                     </table>
+                  </div>
+               </div>
+               <div class="panel panel-default">
+                  <div class="panel-heading">
+                     <div class="row">
+                        <div class="col-sm-8">Question 2</div>
+                        <div class="col-sm-4"><input type="checkbox" name="selected" class="float-right"></div>
+                     </div>
+                  </div>
+                  <div class="panel-body">
+                     <h3>Why?</h3>
+                     <div class="row">
+                        <div class="col-sm-8">Type: Free Response</div><div class="col-sm-4"><p class="float-right">Responses: 50</p></div>
+                     </div>
+                  </div>
+                  <div class="panel-footer">
+                     <table id="dataTable1" class="table table-striped">
+                        <thead>
+                           <tr>
+                              <th>Select</th>
+                              <th>Response</th>
+                           </tr>
+                        </thead>
+                        <tbody id="tableBody">
+                           <tr>
+                              <td><input type="checkbox" name="selected"></td>
+                              <td>Because it is a hard cheese</td>
+                           </tr>
+                           <tr>
+                              <td><input type="checkbox" name="selected"></td>
+                              <td>I like it</td>
+                           </tr>
+                           <tr>
+                              <td><input type="checkbox" name="selected"></td>
+                              <td>Yummy</td>
+                           </tr>
+                       </tbody>
+                     </table>
+                  </div>
+               </div>
+            </div>
+         </section>
+   </div>
+
+   <script src="https://code.jquery.com/jquery-1.11.3.min.js">
+   </script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js">
+   </script>
+</body>
