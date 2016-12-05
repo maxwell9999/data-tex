@@ -93,3 +93,15 @@ header, section, nav {
    max-width: 15em;
    max-height: 15em;
 }
+
+.right-align {
+   float: right;
+}
+
+.thinner {
+   padding: 7px;
+}
+
+#accordion1 {
+   margin-bottom: 10px;
+}
