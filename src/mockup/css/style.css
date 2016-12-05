@@ -20,6 +20,11 @@ header, section, nav {
 .questions {
    margin: 2em;
 }
+.cto-type-dropdown
+{
+  margin-bottom: -2.5px;
+}
+
 .answer,
 {
    padding: .1em;
@@ -49,11 +54,7 @@ header, section, nav {
    margin-bottom: 1em;
    padding-bottom: 2em;
 }
-.table
-{
-   border: 1px solid lightgrey;
-   margin: -.5em;
-}
+.
 .question_type {
    border: 1px solid lightgrey;
    padding: .5em;
@@ -92,4 +93,13 @@ header, section, nav {
 .my-face {
    max-width: 15em;
    max-height: 15em;
+}
+.cto-al-table
+{
+  padding-top: 5px;
+}
+.table-user, .table
+{
+  margin-right: 20px;
+  border: 1px solid lightgrey;
 }
