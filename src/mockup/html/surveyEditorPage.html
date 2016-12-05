@@ -92,7 +92,7 @@
 					      <img height="25" width="25" src="../img/add.png" align="right"/>
 					      </h4>
 					      <h4 class="question_type">
-					      Conjoint Trade-off: Two Option
+					      Conjoint Trade-off: Generate Two Option
 					      <img height="25" width="25" src="../img/add.png" align="right"/>
 					      </h4>					      
 				      </div>
@@ -150,15 +150,8 @@
 
 	    			<div class="panel-default">
 	    				<div class="panel-heading col-sm-12">
-	    					<div class="dropdown">
-							 	<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Full Profile
-							  	<span class="caret"></span></button>
-							  		<ul class="dropdown-menu">
-									    <li><a>Two Option</a></li>
-								  	</ul>
-							</div>
-			            	<div class="col-sm-9">
-	    						Computer Research
+			            	<div class="conjoint-setup">
+	    						Conjoint Setup: Computer Research
 			        			<img src="../img/delete.png" align="right" width="20" height="20" >
 			        			<img src="../img/save.png" align="right" width="20" height="20" >
 				        	</div>
@@ -180,11 +173,11 @@
 				                  <tbody>
 				                  	<tr>
 				                  		<th scope="row">Cost</th>
-				                        <td>< $700</td>
+				                        <td>$0-$700</td>
 				                        <td>$700-800</td>
 				                        <td>$800-900</td>
 				                        <td>$900-1050</td>
-				                        <td>> $1050</td>
+				                        <td>$1050+</td>
 				                        <td>
 				                  			<img height="25" width="25" src="../img/add.png"/>
 				                  			Level
@@ -229,11 +222,194 @@
 			    			</div>
 	    				</div>
 					</div>
+               <div class="panel-default">
+                  <div class="panel-heading" padding="10px" >
+                     1. Rank your computer choices
+                     <img src="../img/delete.png" align="right" width="20" height="20"/>
+                     <img src="../img/save.png" align="right" width="20" height="20"/>
+                  </div>
+                  <div class="panel-body">
+                     <div class="fullProfile-table">
+                        <table class="table table-striped table-bordered">
+                           <thead>
+                                 <tr>
+                                    <th>Attribute</th>
+                                    <th>Product A</th>
+                                    <th>Product B</th>
+                                    <th>Product C</th>
+                                 </tr>
+                              </thead>
+                              <tbody>
+                                 <tr>
+                                    <th scope="row">
+                                       <form id="att_form" name="att_form" method="post">
+                                          <div><select name="attList" id="attList">
+                                             <option value="Select">Select...</option>
+                                             <option value="Cost">Cost</option>
+                                             <option value="MonitorSize">Monitor Size</option>
+                                             <option value="Brand">Brand</option>
+                                             </select>
+                                          </div>
+                                       </form>
+                                    </th>
+                                    <td>
+                                       <form id="level_form" name="level_form" method="post">
+                                          <div><select name="attList" id="attList">
+                                             <option value="Select">Select...</option>
+                                             <option value="Cost1">$0-700</option>
+                                             <option value="Cost2">$700-800</option>
+                                             <option value="Cost3">$800-900</option>
+                                             <option value="Cost4">$900-1050</option>
+                                             <option value="Cost5">$1050+</option>
+                                             </select>
+                                          </div>
+                                       </form>
+                                    </td>
+                                    <td>
+                                       <form id="level_form" name="level_form" method="post">
+                                          <div><select name="attList" id="attList">
+                                             <option value="Select">Select...</option>
+                                             <option value="Cost1">$0-700</option>
+                                             <option value="Cost2">$700-800</option>
+                                             <option value="Cost3">$800-900</option>
+                                             <option value="Cost4">$900-1050</option>
+                                             <option value="Cost5">$1050+</option>
+                                             </select>
+                                          </div>
+                                       </form>
+                                    </td>
+                                    <td>
+                                       <form id="level_form" name="level_form" method="post">
+                                          <div><select name="attList" id="attList">
+                                             <option value="Select">Select...</option>
+                                             <option value="Cost1">$0-700</option>
+                                             <option value="Cost2">$700-800</option>
+                                             <option value="Cost3">$800-900</option>
+                                             <option value="Cost4">$900-1050</option>
+                                             <option value="Cost5">$1050+</option>
+                                             </select>
+                                          </div>
+                                       </form>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <th scope="row">
+                                       <form id="att_form" name="att_form" method="post">
+                                          <div><select name="attList" id="attList">
+                                             <option value="Select">Select...</option>
+                                             <option value="Cost">Cost</option>
+                                             <option value="MonitorSize">Monitor Size</option>
+                                             <option value="Brand">Brand</option>
+                                             </select>
+                                          </div>
+                                       </form>
+                                    </th>
+                                    <td>
+                                       <form id="level_form" name="level_form" method="post">
+                                          <div><select name="attList" id="attList">
+                                             <option value="Select">Select...</option>
+                                             <option value="Cost1">$0-700</option>
+                                             <option value="Cost2">$700-800</option>
+                                             <option value="Cost3">$800-900</option>
+                                             <option value="Cost4">$900-1050</option>
+                                             <option value="Cost5">$1050+</option>
+                                             </select>
+                                          </div>
+                                       </form>
+                                    </td>
+                                    <td>
+                                       <form id="level_form" name="level_form" method="post">
+                                          <div><select name="attList" id="attList">
+                                             <option value="Select">Select...</option>
+                                             <option value="Cost1">$0-700</option>
+                                             <option value="Cost2">$700-800</option>
+                                             <option value="Cost3">$800-900</option>
+                                             <option value="Cost4">$900-1050</option>
+                                             <option value="Cost5">$1050+</option>
+                                             </select>
+                                          </div>
+                                       </form>
+                                    </td>
+                                    <td>
+                                       <form id="level_form" name="level_form" method="post">
+                                          <div><select name="attList" id="attList">
+                                             <option value="Select">Select...</option>
+                                             <option value="Cost1">$0-700</option>
+                                             <option value="Cost2">$700-800</option>
+                                             <option value="Cost3">$800-900</option>
+                                             <option value="Cost4">$900-1050</option>
+                                             <option value="Cost5">$1050+</option>
+                                             </select>
+                                          </div>
+                                       </form>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <th scope="row">
+                                       <form id="att_form" name="att_form" method="post">
+                                          <div><select name="attList" id="attList">
+                                             <option value="Select">Select...</option>
+                                             <option value="Cost">Cost</option>
+                                             <option value="MonitorSize">Monitor Size</option>
+                                             <option value="Brand">Brand</option>
+                                             </select>
+                                          </div>
+                                       </form>
+                                    </th>
+                                    <td>
+                                       <form id="level_form" name="level_form" method="post">
+                                          <div><select name="attList" id="attList">
+                                             <option value="Select">Select...</option>
+                                             <option value="Cost1">$0-700</option>
+                                             <option value="Cost2">$700-800</option>
+                                             <option value="Cost3">$800-900</option>
+                                             <option value="Cost4">$900-1050</option>
+                                             <option value="Cost5">$1050+</option>
+                                             </select>
+                                          </div>
+                                       </form>
+                                    </td>
+                                    <td>
+                                       <form id="level_form" name="level_form" method="post">
+                                          <div><select name="attList" id="attList">
+                                             <option value="Select">Select...</option>
+                                             <option value="Cost1">$0-700</option>
+                                             <option value="Cost2">$700-800</option>
+                                             <option value="Cost3">$800-900</option>
+                                             <option value="Cost4">$900-1050</option>
+                                             <option value="Cost5">$1050+</option>
+                                             </select>
+                                          </div>
+                                       </form>
+                                    </td>
+                                    <td>
+                                       <form id="level_form" name="level_form" method="post">
+                                          <div><select name="attList" id="attList">
+                                             <option value="Select">Select...</option>
+                                             <option value="Cost1">$0-700</option>
+                                             <option value="Cost2">$700-800</option>
+                                             <option value="Cost3">$800-900</option>
+                                             <option value="Cost4">$900-1050</option>
+                                             <option value="Cost5">$1050+</option>
+                                             </select>
+                                          </div>
+                                       </form>
+                                    </td>
+                                 </tr>
+                              </tbody>
+                        </table>
+                     </div>
+                  </div>
+                  <div class="panel-footer">
+                        <img height="25" width="25" src="../img/add.png"/>
+                        Add Row
+                  </div>
+               </div>
 					<div class="panel-default">
 	        			<div class="panel-heading" padding="10px" >
 	        				
 			        			
-			        				1. What is your favorite color?
+			        				2. What is your favorite color?
 			        				
 				        			<img src="../img/delete.png" align="right" width="20" height="20" >
 				        			
@@ -260,7 +436,7 @@
 	    			</div>
 	    			<div class="panel-default">
 	        			<div class="panel-heading">
-		        				1. What is your favorite color?
+		        				3. What is your annual income?
 			        				
 				        			<img src="../img/delete.png" align="right" width="20" height="20" >
 				        			
