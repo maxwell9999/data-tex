@@ -46,70 +46,183 @@
       </section>
 
          <section id="home" class="tab-pane active row">
-            <section class="col-sm-4">
+            <section class="col-sm-4 thinner">
                <div class="panel-group" id="accordion">
                   <div class="panel panel-default">
                      <div class="panel-heading">
                         <h4 class="panel-title">
                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
-                              Create Filter
+                              Current Filters
                            </a>
                         </h4>
                      </div>
                      <div id="collapse1" class="panel-collapse collapse in">
-                           <div class="panel-body">
+                        <div class="panel-body thinner">
+                           <div class="panel-group" id="accordion1">
                               <div class="panel panel-default">
-                                 <div class="panel-body">Filter by demographics
-                                 <img height="25" width="25" src="../img/add.png" align="right"/></div>
+                                 <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                       <a data-toggle="collapse" data-parent="#accordion1" href="#collapse12">
+                                          Add Filter
+                                          <img height="25" width="25" src="../img/add.png" align="right"/>
+                                       </a>
+                                    </h4>
+                                 </div>
+                                 <div id="collapse12" class="panel-collapse collapse">
+                                    <div class="panel-body thinner">
+                                       <div class="panel-group" id="accordion2">
+                                          <div class="panel panel-default">
+                                             <div class="panel-heading">
+                                                <h4 class="panel-title">
+                                                   <a data-toggle="collapse" data-parent="#accordion2" href="#collapse121">
+                                                      Filter by demographics
+                                                      <img height="25" width="25" src="../img/add.png" align="right"/>
+                                                   </a>
+                                                </h4>
+                                             </div>
+                                             <div id="collapse121" class="panel-collapse collapse">
+                                                <div class="panel-body">
+                                                   <form id="filter_form" name="filter_form" method="post">
+                                                      <div>Demographic:&nbsp;<select name="demographics" id="demographics">
+                                                         <option value="Select Demographic">Select...</option>
+                                                         <option value="Race">Race</option>
+                                                         <option value="Age">Age</option>
+                                                         <option value="Gender">Gender</option>
+                                                         <option value="Income Level">Income Level</option>
+                                                         <option value="Education Level">Education Level</option>
+                                                         </select>
+                                                      </div>
+                                                      <div>Ranges:&nbsp;<select name="demographics" id="demographics">
+                                                         <option value="Young Adult">Young Adult(18-24)</option>
+                                                         <option value="Adult">Adult(25-65)</option>
+                                                         <option value="Senior">Senior(65-85)</option>
+                                                         <option value="Super Senior">Super Senior(85+)</option>
+                                                         </select>
+                                                      </div>
+                                                      <input id="addDFilt" type="button" name="addDFilt" value="Add Filter">
+                                                      <input id="addDCross" type="button" name="addDCross" value="Add Crosstab">
+                                                      <input id="cancel" type="button" name="cancel" value="Cancel">
+                                                   </form>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="panel panel-default">
+                                             <div class="panel-heading">
+                                                <h4 class="panel-title">
+                                                   <a data-toggle="collapse" data-parent="#accordion2" href="#collapse122">
+                                                      Filter by questions and answer
+                                                      <img height="25" width="25" src="../img/add.png" align="right"/>
+                                                   </a>
+                                                </h4>
+                                             </div>
+                                             <div id="collapse122" class="panel-collapse collapse">
+                                                <div class="panel-body">
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="panel panel-default">
+                                             <div class="panel-heading">
+                                                <h4 class="panel-title">
+                                                   <a data-toggle="collapse" data-parent="#accordion2" href="#collapse123">
+                                                      Filter by number of responses
+                                                      <img height="25" width="25" src="../img/add.png" align="right"/>
+                                                   </a>
+                                                </h4>
+                                             </div>
+                                             <div id="collapse123" class="panel-collapse collapse">
+                                                <div class="panel-body">
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="panel panel-default">
+                                             <div class="panel-heading">
+                                                <h4 class="panel-title">
+                                                   <a data-toggle="collapse" data-parent="#accordion2" href="#collapse124">
+                                                      Filter by date answered
+                                                      <img height="25" width="25" src="../img/add.png" align="right"/>
+                                                   </a>
+                                                </h4>
+                                             </div>
+                                             <div id="collapse124" class="panel-collapse collapse">
+                                                <div class="panel-body">
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="panel panel-default">
+                                             <div class="panel-heading">
+                                                <h4 class="panel-title">
+                                                   <a data-toggle="collapse" data-parent="#accordion2" href="#collapse125">
+                                                      Filter by selected responses
+                                                      <img height="25" width="25" src="../img/add.png" align="right"/>
+                                                   </a>
+                                                </h4>
+                                             </div>
+                                             <div id="collapse125" class="panel-collapse collapse">
+                                                <div class="panel-body">
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
                               </div>
                               <div class="panel panel-default">
-                                 <div class="panel-body">Filter by answers
-                                 <img height="25" width="25" src="../img/add.png" align="right"/></div>
+                                 <div class="panel-body">Filter: Q1 A:"Emmental"
+                                 <div class="right-align">&nbsp;<input type="checkbox" name="selected">&nbsp;</div>
+                                 <div class="right-align"><img src="../img/save.png" align="right" width="25" height="25"/>&nbsp;</div>
+                                 </div>
                               </div>
                               <div class="panel panel-default">
-                                 <div class="panel-body">Filter by number of responses
-                                 <img height="25" width="25" src="../img/add.png" align="right"/></div>
-                              </div>
-                              <div class="panel panel-default">
-                                 <div class="panel-body">Filter by date answered
-                                 <img height="25" width="25" src="../img/add.png" align="right"/></div>
-                              </div>
-                              <div class="panel panel-default">
-                                 <div class="panel-body">Filter by selected responses
-                                 <img height="25" width="25" src="../img/add.png" align="right"/></div>
+                                 <div class="panel-body">Crosstab: Gender
+                                 <div class="right-align">&nbsp;<input type="checkbox" name="selected">&nbsp;</div>
+                                 <div class="right-align"><img src="../img/save.png" align="right" width="25" height="25"/>&nbsp;</div>
+                                 </div>
                               </div>
                            </div>
                         </div>
                      </div>
-                     <div class="panel panel-default">
-                      <div class="panel-heading">
-                           <h4 class="panel-title">
-                              <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
-                                 Saved Filters
-                              </a>
-                           </h4>
-                        </div>
+                  </div>
+                  <div class="panel panel-default">
+                     <div class="panel-heading">
+                        <h4 class="panel-title">
+                           <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+                              Saved Filters
+                           </a>
+                        </h4>
+                     </div>
                      <div id="collapse2" class="panel-collapse collapse">
                            <div class="panel-body">
                               <div class="panel panel-default">
-                                 <div class="panel-body"><a>Ages 18-24<a>
-                                 <img height="25" width="25" src="../img/delete.png" align="right"/></div>
+                                 <div class="panel-body">Filter: Young Adult(18-24)
+                                    <div class="right-align">
+                                       <input type="checkbox" name="selected"/>
+                                    </div>
+                                    <div class="right-align">
+                                       <img height="25" width="25" src="../img/delete.png"/>&nbsp;
+                                    </div>
+                                 </div>
                               </div>
                               <div class="panel panel-default">
-                                 <div class="panel-body"><a>Answered "Gruyere" to question 1<a>
-                                 <img height="25" width="25" src="../img/delete.png" align="right"/></div>
+                                 <div class="panel-body">Filter: Q1 A:"Gruyere"
+                                    <div class="right-align">
+                                       <input type="checkbox" name="selected"/>
+                                    </div>
+                                    <div class="right-align">
+                                       <img height="25" width="25" src="../img/delete.png"/>&nbsp;
+                                    </div>
+                                 </div>
                               </div>
                            </div>
                         </div>
                      </div>
-                     <div class="panel panel-default">
-                        <div class="panel-heading">
-                           <h4 class="panel-title">
-                              <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
-                                 Export Options
-                              </a>
-                           </h4>
-                        </div>
+                  <div class="panel panel-default">
+                     <div class="panel-heading">
+                        <h4 class="panel-title">
+                           <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+                              Export Options
+                           </a>
+                        </h4>
+                     </div>
                      <div id="collapse3" class="panel-collapse collapse">
                         <div class="panel-body">
                               <div class="panel panel-default">
@@ -131,7 +244,7 @@
                   <div class="panel-heading">
                      <div class="row">
                         <div class="col-sm-8">Question 1</div>
-                        <div class="col-sm-4" align="right"><a href="linearRegression.html">Regression analysis</a></div>
+                        <div class="col-sm-4" align="right"><a href="linearRegression.html">Question Analysis</a></div>
                      </div>
                   </div>
                   <div class="panel-body">
@@ -178,7 +291,7 @@
                   <div class="panel-heading">
                      <div class="row">
                         <div class="col-sm-8">Question 2</div>
-                        <div class="col-sm-4" align="right"><a>Regression analysis</a></div>
+                        <div class="col-sm-4" align="right"><a>Question Analysis</a></div>
                      </div>
                   </div>
                   <div class="panel-body">
