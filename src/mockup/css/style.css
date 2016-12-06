@@ -94,7 +94,6 @@ header, section, nav {
    max-width: 15em;
    max-height: 15em;
 }
-<<<<<<< HEAD
 .cto-al-table
 {
   padding-top: 5px;
@@ -104,7 +103,6 @@ header, section, nav {
   margin-right: 20px;
   border: 1px solid lightgrey;
 }
-=======
 
 .right-align {
    float: right;
@@ -117,4 +115,3 @@ header, section, nav {
 #accordion1 {
    margin-bottom: 10px;
 }
->>>>>>> 1314b788d6948ea8b4b0df0ce3b4a41003283b66
